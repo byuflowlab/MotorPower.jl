@@ -6,7 +6,7 @@
 
 [![codecov.io](http://codecov.io/github/moore54/MotorPower.jl/coverage.svg?branch=master)](http://codecov.io/github/moore54/MotorPower.jl?branch=master)
 
-#Installation
+# Installation
 
 ```julia
 
@@ -14,14 +14,14 @@ Pkg.clone("https://github.com/byuflowlab/MotorPower.jl.git")
 
 ```
 
-#Testing
+# Testing
 ```julia
 
 Pkg.test("MotorPower")
 
 ```
 
-#Use
+# Use
 
 ```julia
 
@@ -37,7 +37,7 @@ Q, omega, Po, eta_M, mass_M, Ro = MotorPower.motorVI(Vm,Imax,Kv,I0;numMotors=1,C
 
 ```
 
-#I/O
+# I/O
 ```julia
 """
 motorVI
