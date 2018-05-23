@@ -1,37 +1,40 @@
+# __precompile__()
+
 module MotorPower
 using Dierckx
+
+export motorVI
 export shigleygear
 export planetarygear
+
+
 """
-motorVI
+out1, out2, Po, eta_M, mass_M, Ro, VmaxmotorVI(input1,input2,Kv,I0;numMotors=1,Case=0,mtype = "hobby")
 
 Author: Kevin Moore
 Date: 26 June 2017
 
-Updates:
+# Inputs:
+- Q: N-m
+- omega: rad/s
 
-Units: SI
+# Parameters:
+- Kv: rad/s/volt
+- Ro: ohms
+- I0: amps
+- numMotors: #
+- case::Bool: 1 is Q, omega in 0 is V, I in
 
-Inputs:
-Q: N-m
-omega: rad/s
+# Constants:
 
-Parameters:
-Kv: rad/s/volt
-Ro: ohms
-I0: amps
-numMotors: #
+# Outputs:
+- V or Q: volts or N-m
+- Im or omega: amps or rad/s
+- Pshaft: watts
+- eta_M: efficiency base 1
+- mass_M: kg
 
-Constants:
-
-Outputs:
-V: volts
-Im: amps
-Pshaft: watts
-eta_M: efficiency base 1
-mass_M: kg
-
-Method: 1st order model
+Method: Mark Drela 1st order model
 
 Assumptions/Limitiations: thermal resistance increase neglected
 
