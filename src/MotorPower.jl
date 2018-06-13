@@ -1,7 +1,9 @@
 module MotorPower
 using Dierckx
-export shigleygear
-export planetarygear
+export shigleygear,planetarygear
+
+__precompile__()
+
 """
 motorVI
 
