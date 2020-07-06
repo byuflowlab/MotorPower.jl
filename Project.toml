@@ -1,8 +1,16 @@
 name = "MotorPower"
 uuid = "adce51eb-a512-5884-a72b-4c4c7012d4c6"
+authors = ["Kevin Moore <moorekevin711@gmail.com> and contributors"]
+version = "0.2.0"
 
 [deps]
 Dierckx = "39dd38d3-220a-591b-8e3c-4c3a8c710a94"
 
 [compat]
 julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
